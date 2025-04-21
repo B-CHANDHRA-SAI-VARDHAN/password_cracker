@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Guessing App</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Guessing App</h1>
+        <form action="/guess" method="post">
+            <label for="password">Enter a Numeric Password:</label>
+            <input type="text" id="password" name="password" maxlength="5" placeholder="e.g., 12345" required>
+            <button type="submit">Start Guessing</button>
+        </form>
+        <div id="result">
+            <!-- Backend will send the guessing result -->
+        </div>
+    </div>
+    
+</body>
+</html>
